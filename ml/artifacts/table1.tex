@@ -1,0 +1,53 @@
+% Table 1 — Study cohort characteristics
+% ALL VALUES computed directly from the modelling dataset
+% (oof_predictions.parquet + cohort_h24_w6.pkl cache)
+\begin{table}[H]
+\centering
+\caption{\textbf{Study cohort characteristics.}
+All statistics are derived directly from the modelling dataset after
+application of inclusion and exclusion criteria.
+Values are reported as median (interquartile range) or $n$ (\%).
+LOS: length of stay; IQR: interquartile range; NEWS2: National Early Warning Score 2.}
+\label{tab:cohort}
+\begin{tabular}{lc}
+\toprule
+\textbf{Characteristic} & \textbf{Value} \\
+\midrule
+\multicolumn{2}{l}{\textit{Dataset source}} \\
+\quad MIMIC-IV source admissions & 526,748 \\
+\quad Excluded (no ICU stay, LOS $<$ 6\,h, or insufficient features) & 446,306 \\
+\quad \textbf{Admissions included in modelling cohort} & \textbf{80,442} \\
+\quad Unique patients & 62,025 \\
+\addlinespace
+\multicolumn{2}{l}{\textit{Monitoring windows}} \\
+\quad Total 6-hourly windows & 1,334,773 \\
+\quad Positive windows (deterioration within 24\,h) & 26,201 (1.96\%) \\
+\quad Negative windows & 1,308,572 (98.04\%) \\
+\quad Windows per admission, median (IQR) & 9 (5--17) \\
+\addlinespace
+\multicolumn{2}{l}{\textit{Demographics}} \\
+\quad Age, median (IQR), years & 65 (53--76) \\
+\quad Age, mean $\pm$ SD, years & 63.1 $\pm$ 16.7 \\
+\quad Age $<$ 65 years & 39,873 (49.6\%) \\
+\quad Age 65--79 years & 26,382 (32.8\%) \\
+\quad Age $\geq$ 80 years & 14,187 (17.6\%) \\
+\quad Female sex & 35,395 (44.0\%) \\
+\quad Male sex & 45,047 (56.0\%) \\
+\addlinespace
+\multicolumn{2}{l}{\textit{Clinical characteristics}} \\
+\quad LOS, median (IQR), days & 7.1 (4.3--12.4) \\
+\quad Admission type --- Emergency (EW EMER.) & 41,330 (51.4\%) \\
+\quad Admission type --- Urgent & 12,994 (16.2\%) \\
+\quad Admission type --- Observation & 12,098 (15.0\%) \\
+\quad Admission type --- Same-day surgical & 8,238 (10.2\%) \\
+\quad Admission type --- Other & 5,782 (7.2\%) \\
+\quad NEWS2 score, median (IQR) & 4 (3--6) \\
+\addlinespace
+\multicolumn{2}{l}{\textit{Outcomes}} \\
+\quad Admissions with ICU stay & 80,442 (100.0\%) \\
+\quad Admissions requiring mechanical ventilation & 9,619 (12.0\%) \\
+\quad In-hospital mortality & 7,453 (9.3\%) \\
+\quad Admissions with $\geq$1 positive monitoring window & 7,995 (9.9\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

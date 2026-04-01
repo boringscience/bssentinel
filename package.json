@@ -1,0 +1,22 @@
+{
+  "name": "bssentinel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev":      "vite --port 5183",
+    "build":    "vite build",
+    "preview":  "vite preview",
+    "server":   "python server/main.py",
+    "dev:full":  "concurrently \"pnpm dev\" \"pnpm server\""
+  },
+  "dependencies": {
+    "react":     "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently":         "^9.1.2",
+    "vite":                 "^7.0.0"
+  }
+}

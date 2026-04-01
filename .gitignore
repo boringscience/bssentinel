@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# ML — large/regenerable data
+ml/cache/
+ml/artifacts/oof_predictions.parquet
+
+# Node
+node_modules/
+dist/
+.vite/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.Rhistory
