@@ -2,6 +2,8 @@
 
 A clinical decision support system that predicts acute patient deterioration in hospitalized patients. Combines the **NEWS2** scoring system with an **XGBoost model** trained on MIMIC-IV, achieving AUROC 0.758 vs 0.568 for NEWS2 alone.
 
+bssentinel is a clincial tool from Boring Science Suite managed by Boring Science LLC. 
+
 **Predicts** risk of ICU transfer, intubation, cardiac arrest, or death within 6, 12, 24, or 48 hours.
 
 ---
